@@ -2,10 +2,43 @@
 package _01_else_if._1_robot_color_chooser;
 
 import javax.swing.JOptionPane;
+
+import org.jointheleague.graphical.robot.Robot;
+
 import java.awt.Color;
 
 public class RobotColorChooser {
 	public static void main(String[] args) {
+		Robot ort = new Robot();
+		ort.penDown();
+		ort.setPenWidth(10);
+		ort.setSpeed(30);
+		ort.move(200);
+		ort.turn(72);
+		ort.move(200);
+		ort.turn(72);
+		ort.move(200);
+		ort.turn(72);
+		ort.move(200);
+		ort.turn(72);
+		ort.move(200);
+		ort.turn(72);
+		String color =JOptionPane.showInputDialog(null, "Any colors?");
+		int hello = Integer.parseInt(color);
+		ort.penDown();
+		ort.setPenColor(hello,hello,hello);
+		ort.setPenWidth(10);
+		ort.setSpeed(30);
+		ort.move(200);
+		ort.turn(72);
+		ort.move(200);
+		ort.turn(72);
+		ort.move(200);
+		ort.turn(72);
+		ort.move(200);
+		ort.turn(72);
+		ort.move(200);
+		ort.turn(72);
 		
 		//1. Create a new Robot
 	    //2. Make the robot draw a shape (this will take more than one line of code)		
