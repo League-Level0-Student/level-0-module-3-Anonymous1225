@@ -36,6 +36,10 @@ public class Chooseyourownadventure {
 									"You follow the river to the end and see a small village");
 							String o4l = JOptionPane.showInputDialog(
 									"A smore creature says to you we need you to go to the top of the mountain do you listen or not");
+							if (o4l.equals("no")) {
+								looper1+=4543256;
+								looper2+=123432;
+							}
 							if (o4l.equals("yes")) {
 								JOptionPane.showMessageDialog(null, "A volcano that appears to have been dormant for decades erupts suddenly and within it is pure concentrated boiled sugar");
 								String o5l = JOptionPane.showInputDialog("After an epic battle you faced with a gem it's gleam all beautiful do you steal it?");
@@ -61,6 +65,16 @@ public class Chooseyourownadventure {
 								JOptionPane.showMessageDialog(null,"You can only swim through it at 30% your normal speed but enough to get through in time");
 								JOptionPane.showMessageDialog(null, "Ice forms as a massive monster appears so you just throw a match at it");
 								String o5r = JOptionPane.showInputDialog("A crystal with a beautiful appears do you take it or not?");
+								if (o5r.equals("yes")) {
+									JOptionPane.showMessageDialog(null, "A energy travels through and you you can defeat it");
+									goodending = true;
+									looper1+=4543256;
+									looper2+=123432;
+								}
+								if (o5r.equals("no")) {
+									looper1+=4543256;
+									looper2+=123432;
+								}
 							}
 							if (o4r.equals("no")) {
 								JOptionPane.showMessageDialog(null, "You now go back after a day you find your self at the fork again");
@@ -72,7 +86,13 @@ public class Chooseyourownadventure {
 			}
 		}
 		if (goodending==false) {
-			
+			JOptionPane.showMessageDialog(null, "The king was the demon all along without the gems you are doomed and the blessing is revoked!!!");
+			JOptionPane.showMessageDialog(null, "Bad ending");
+		}
+		if (goodending==true) {
+			JOptionPane.showMessageDialog(null, "You have got a gem! one gem has the power to defeat it, the problem is that the king is the demon");
+			JOptionPane.showMessageDialog(null, "you have been turned into an a and every fight move you make is just enough to lower the health until finally it's gone, reduced to atoms");
+			JOptionPane.showMessageDialog(null, "Good ending");
 		}
 	}
 }
